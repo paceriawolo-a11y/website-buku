@@ -59,12 +59,12 @@ interface BookCatalogItem {
 
 const BOOKS: BookCatalogItem[] = [
   {
-    id: 'nikel-merah-putih',
-    title: 'Nikel Merah Putih',
+    id: 'amanah-merah-putih',
+    title: 'Amanah Merah Putih',
     subtitle: 'Sebuah Novel',
     author: 'Ihwan Kadir',
     description: 'Novel fiksi sosial-politik tentang konflik tambang nikel, perjuangan rakyat, dan harga kedaulatan di tanah Sulawesi.',
-    coverImage: '/nikel-merah-putih-cover.png',
+    coverImage: '/amanah-merah-putih-cover.png',
     dataFile: '/book-data.json',
     icon: 'novel',
     badge: 'Novel',
@@ -74,7 +74,7 @@ const BOOKS: BookCatalogItem[] = [
     title: 'Jiwa NWM Corp',
     subtitle: 'The Soul of an Indonesian Industrial Civilization',
     author: 'Ihwan Kadir',
-    description: 'Corporate Bible NWM Corp — filosofi, sejarah, manifesto, konstitusi, dan visi perusahaan yang diceritakan dalam novel Nikel Merah Putih.',
+    description: 'Corporate Bible NWM Corp — filosofi, sejarah, manifesto, konstitusi, dan visi perusahaan yang diceritakan dalam novel Amanah Merah Putih.',
     coverImage: '',
     dataFile: '/nwm-corp-data.json',
     icon: 'corporate',
@@ -299,8 +299,8 @@ function HeroSection({ onReadClick }: { onReadClick: () => void }) {
             <div className="absolute -inset-4 rounded-xl bg-gradient-to-br from-amber-glow/20 to-red-accent/10 blur-xl" />
             <div className="relative animate-float">
               <Image
-                src="/nikel-merah-putih-cover.png"
-                alt="Sampul buku Nikel Merah Putih karya Ihwan Kadir"
+                src="/amanah-merah-putih-cover.png"
+                alt="Sampul buku Amanah Merah Putih karya Ihwan Kadir"
                 width={320}
                 height={480}
                 className="rounded-lg shadow-2xl shadow-black/60 w-[260px] sm:w-[320px] h-auto"
@@ -344,7 +344,7 @@ function SinopsisSection() {
             terjepit di antara derap industri dan kehidupan yang mereka kenal.
           </p>
           <p>
-            <span className="text-warm-white font-medium">Nikel Merah Putih</span> mengisahkan
+            <span className="text-warm-white font-medium">Amanah Merah Putih</span> mengisahkan
             perjalanan tokoh-tokoh yang terjebak dalam pusaran konflik antara kepentingan korporasi,
             ambisi politik, dan survival masyarakat adat. Dari laboratorium penelitian hingga ruang
             rapat direksi, dari pinggir sungai yang tercemar hingga gedung-gedung ibu kota — novel
@@ -558,7 +558,7 @@ function TemaSection() {
           <h2 className="text-3xl sm:text-4xl font-bold text-warm-white">Tema Novel</h2>
           <div className="mt-4 mx-auto w-16 h-0.5 bg-amber-glow/50" />
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto">
-            Nikel Merah Putih bukan sekadar cerita tentang tambang. Ia adalah jalinan tema yang
+            Amanah Merah Putih bukan sekadar cerita tentang tambang. Ia adalah jalinan tema yang
             saling bertautan — membentuk gambaran utuh tentang Indonesia kontemporer.
           </p>
         </div>
@@ -626,7 +626,7 @@ function AuthorSection() {
                 dan menyentuh.
               </p>
               <p>
-                <span className="text-warm-white italic">Nikel Merah Putih</span> adalah karya
+                <span className="text-warm-white italic">Amanah Merah Putih</span> adalah karya
                 terbarunya yang lahir dari pengamatan panjang terhadap dampak industri nikel di
                 Indonesia — sebuah narasi fiksi yang terinspirasi dari kisah nyata.
               </p>
@@ -1219,7 +1219,7 @@ export default function Home() {
   }, []);
 
   const startReading = () => {
-    loadBook('nikel-merah-putih');
+    loadBook('amanah-merah-putih');
   };
 
   const stopReading = () => {
